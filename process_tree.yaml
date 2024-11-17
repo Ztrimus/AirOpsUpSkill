@@ -1,0 +1,218 @@
+ProcessTree:
+  07f521d5:
+    ChildNodeUUID: []
+    IDList:
+    - vid_1
+    Step: '1. Gather necessary tools and materials: socket wrench, oil filter wrench,
+      new oil filter, synthetic oil.'
+    TreeLevel: 2
+    UUID: 07f521d5
+  09e0899c:
+    ChildNodeUUID:
+    - 52ee5ea3
+    IDList:
+    - vid_2
+    Step: 12. Lower the car safely from the jack stands and remove the jack.
+    TreeLevel: 3
+    UUID: 09e0899c
+  3db424b5:
+    ChildNodeUUID:
+    - d449c1dd
+    IDList:
+    - vid_2
+    Step: 14. Dispose of the old oil and filter responsibly by taking them to a recycling
+      center or automotive shop.
+    TreeLevel: 4
+    UUID: 3db424b5
+  46a2dda6:
+    ChildNodeUUID:
+    - 9d159f8c
+    - b14b19fd
+    - d9e49d8b
+    - 07f521d5
+    IDList:
+    - vid_1
+    Step: '1. Gather Tools and Materials:'
+    TreeLevel: 1
+    UUID: 46a2dda6
+  470102eb:
+    ChildNodeUUID: []
+    IDList:
+    - vid_3
+    Step: 7. Reinstall the drain plug securely.
+    TreeLevel: 3
+    UUID: 470102eb
+  52ee5ea3:
+    ChildNodeUUID: []
+    IDList:
+    - vid_3
+    Step: 13. Lower the car safely from the jack stands.
+    TreeLevel: 4
+    UUID: 52ee5ea3
+  6091d8e6:
+    ChildNodeUUID: []
+    IDList:
+    - vid_1
+    Step: '- Start the engine and monitor for smooth operation and absence of leaks.'
+    TreeLevel: 4
+    UUID: 6091d8e6
+  679dc621:
+    ChildNodeUUID: []
+    IDList:
+    - vid_3
+    Step: '1. Gather necessary tools and materials: oil filter, new washer, synthetic
+      oil, oil catch container, wrench, jack, and jack stands.'
+    TreeLevel: 3
+    UUID: 679dc621
+  8d66dd06:
+    ChildNodeUUID: []
+    IDList:
+    - vid_3
+    Step: "9. Apply a thin layer of synthetic oil to the new oil filter\u2019s rubber\
+      \ seal."
+    TreeLevel: 4
+    UUID: 8d66dd06
+  961234ce:
+    ChildNodeUUID: []
+    IDList:
+    - vid_1
+    Step: '8. Ensure the Engine Runs Smoothly:'
+    TreeLevel: 3
+    UUID: 961234ce
+  9d159f8c:
+    ChildNodeUUID:
+    - 679dc621
+    IDList:
+    - vid_1
+    Step: '- Collect a socket wrench, oil filter wrench, new oil filter, and synthetic
+      oil.'
+    TreeLevel: 2
+    UUID: 9d159f8c
+  9e259a0c:
+    ChildNodeUUID:
+    - f63120ac
+    IDList:
+    - vid_3
+    Step: 10. Install the new oil filter by hand, ensuring a snug fit.
+    TreeLevel: 4
+    UUID: 9e259a0c
+  Nodes:
+    123e4567-e89b-12d3-a456-426614174001:
+      ChildNodeUUID: []
+      IDList:
+      - vid_1
+      Step: Grab all tools
+      TreeLevel: 1
+    123e4567-e89b-12d3-a456-426614174002:
+      ChildNodeUUID: []
+      IDList:
+      - vid_1
+      Step: Jack up the car safely
+      TreeLevel: 1
+    123e4567-e89b-12d3-a456-426614174003:
+      ChildNodeUUID:
+      - 123e4567-e89b-12d3-a456-426614174005
+      IDList:
+      - vid_1
+      Step: Locate and unscrew the oil drain plug
+      TreeLevel: 1
+    123e4567-e89b-12d3-a456-426614174004:
+      ChildNodeUUID: []
+      IDList:
+      - vid_1
+      Step: Replace the oil filter and add fresh oil
+      TreeLevel: 1
+    123e4567-e89b-12d3-a456-426614174005:
+      ChildNodeUUID: []
+      IDList:
+      - vid_1
+      Step: Let the old oil drain completely
+      TreeLevel: 2
+    123e4567-e89b-12d3-a456-426614174006:
+      ChildNodeUUID: []
+      IDList:
+      - vid_1
+      Step: Check for leaks and ensure smooth running
+      TreeLevel: 2
+  RootNode:
+    ChildNodeUUID:
+    - 123e4567-e89b-12d3-a456-426614174001
+    - 123e4567-e89b-12d3-a456-426614174002
+    - 123e4567-e89b-12d3-a456-426614174003
+    - 123e4567-e89b-12d3-a456-426614174004
+    - 46a2dda6
+    IDList:
+    - vid_1
+    Step: Change oil in 2015 Mini Cooper S
+    TreeLevel: 0
+    UUID: 123e4567-e89b-12d3-a456-426614174000
+  a55a4103:
+    ChildNodeUUID: []
+    IDList:
+    - vid_2
+    Step: 13. Reset the service indicator on the car's dashboard by following the
+      vehicle's specific reset procedure.
+    TreeLevel: 4
+    UUID: a55a4103
+  b14b19fd:
+    ChildNodeUUID:
+    - ccbe7da5
+    - 961234ce
+    - f0bdf45a
+    - ce903ca4
+    - 09e0899c
+    - 470102eb
+    IDList:
+    - vid_1
+    Step: '7. Check for Leaks:'
+    TreeLevel: 2
+    UUID: b14b19fd
+  ccbe7da5:
+    ChildNodeUUID:
+    - 6091d8e6
+    IDList:
+    - vid_1
+    Step: '- Inspect the area around the oil drain plug and oil filter for any leaks.'
+    TreeLevel: 3
+    UUID: ccbe7da5
+  ce903ca4:
+    ChildNodeUUID:
+    - 9e259a0c
+    IDList:
+    - vid_2
+    Step: 11. Reattach the splash guard to the underside of the car.
+    TreeLevel: 3
+    UUID: ce903ca4
+  d449c1dd:
+    ChildNodeUUID: []
+    IDList:
+    - vid_3
+    Step: 14. Clean up any oil spills, and dispose of the old oil and filter responsibly.
+    TreeLevel: 5
+    UUID: d449c1dd
+  d9e49d8b:
+    ChildNodeUUID: []
+    IDList:
+    - vid_2
+    Step: '1. Gather necessary tools and materials: wrench set, oil pan, new oil filter,
+      synthetic oil, and a clean cloth.'
+    TreeLevel: 2
+    UUID: d9e49d8b
+  f0bdf45a:
+    ChildNodeUUID:
+    - a55a4103
+    - 3db424b5
+    - 8d66dd06
+    IDList:
+    - vid_2
+    Step: 9. Fill the engine with the recommended amount of synthetic oil.
+    TreeLevel: 3
+    UUID: f0bdf45a
+  f63120ac:
+    ChildNodeUUID: []
+    IDList:
+    - vid_3
+    Step: 12. Use the dipstick to check oil levels and ensure they're within the recommended
+      range.
+    TreeLevel: 5
+    UUID: f63120ac

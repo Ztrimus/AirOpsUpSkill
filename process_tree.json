@@ -1,0 +1,491 @@
+{
+    "root_uuid": {
+        "UUID": "root_uuid",
+        "TreeLevel": 0,
+        "Step": "Introduction",
+        "IDList": [
+            "vid_1"
+        ],
+        "ChildNodeUUID": [
+            "child_1",
+            "child_2",
+            "b01d44bd-5dfa-47ac-8fe4-4d4887363e5e"
+        ]
+    },
+    "child_1": {
+        "UUID": "child_1",
+        "TreeLevel": 1,
+        "Step": "Gathering tools",
+        "IDList": [
+            "vid_1"
+        ],
+        "ChildNodeUUID": [
+            "child_1_1",
+            "child_1_2",
+            "85903ccc-0d0a-4ccb-b492-16f823969449",
+            "2d68eb52-03ed-4285-9aeb-be44d1629ce4",
+            "e4472527-6fb5-45de-a9a1-d97d6f6dc038",
+            "9eb978ab-9734-4ed3-ba3c-f978d48e8f19",
+            "ce207f6d-7c46-4da8-8f87-fc4a4fb21a1b",
+            "a51efefa-eb6c-49ab-9a64-ae33c0fab29b"
+        ]
+    },
+    "child_1_1": {
+        "UUID": "child_1_1",
+        "TreeLevel": 2,
+        "Step": "Prepare car",
+        "IDList": [
+            "vid_1"
+        ],
+        "ChildNodeUUID": []
+    },
+    "child_1_2": {
+        "UUID": "child_1_2",
+        "TreeLevel": 2,
+        "Step": "Drain old oil",
+        "IDList": [
+            "vid_1"
+        ],
+        "ChildNodeUUID": [
+            "child_1_2_1",
+            "4c1686d1-29e3-4f7c-b570-6b9939632b3d",
+            "e8b5ed68-2345-4e56-8d88-6489bd218b35",
+            "cbc910da-02cb-4835-9f1a-847f3af4d86b"
+        ]
+    },
+    "child_1_2_1": {
+        "UUID": "child_1_2_1",
+        "TreeLevel": 3,
+        "Step": "Replace oil filter",
+        "IDList": [
+            "vid_1"
+        ],
+        "ChildNodeUUID": [
+            "child_1_2_1_1",
+            "2efdb15e-ee84-4a9e-af74-2043bec80294",
+            "c0c544e6-fd9f-49bb-a77a-2c48a1b3d8f0",
+            "a3ffccc4-ac49-4f5d-b51f-dd4bc5a706d3"
+        ]
+    },
+    "child_1_2_1_1": {
+        "UUID": "child_1_2_1_1",
+        "TreeLevel": 4,
+        "Step": "Add fresh oil",
+        "IDList": [
+            "vid_1"
+        ],
+        "ChildNodeUUID": [
+            "4362911d-83f6-45d4-86c1-13c0a9158a7a",
+            "59e5b646-59a3-46e6-921c-02ea28ffbc54",
+            "808c6b53-a5f8-4267-a535-ad66b3654042"
+        ]
+    },
+    "child_2": {
+        "UUID": "child_2",
+        "TreeLevel": 1,
+        "Step": "Check for leaks and finish",
+        "IDList": [
+            "vid_1"
+        ],
+        "ChildNodeUUID": []
+    },
+    "85903ccc-0d0a-4ccb-b492-16f823969449": {
+        "UUID": "85903ccc-0d0a-4ccb-b492-16f823969449",
+        "Step": "2. Jack up the car safely.",
+        "TreeLevel": 2,
+        "IDList": [
+            "vid_1"
+        ],
+        "ChildNodeUUID": [
+            "122808cc-70fa-4158-957e-90e56db9824b",
+            "306bb3d6-ac5f-4fce-9a80-d27d88a56dfb"
+        ]
+    },
+    "122808cc-70fa-4158-957e-90e56db9824b": {
+        "UUID": "122808cc-70fa-4158-957e-90e56db9824b",
+        "Step": "3. Locate the oil drain plug.",
+        "TreeLevel": 3,
+        "IDList": [
+            "vid_1",
+            "vid_7"
+        ],
+        "ChildNodeUUID": [
+            "de32600f-e158-4d3f-ad9a-32fe3efcef3d",
+            "a8743929-837f-40bd-b431-06f3df3f7f5c"
+        ]
+    },
+    "de32600f-e158-4d3f-ad9a-32fe3efcef3d": {
+        "UUID": "de32600f-e158-4d3f-ad9a-32fe3efcef3d",
+        "Step": "4. Unscrew the oil drain plug.",
+        "TreeLevel": 4,
+        "IDList": [
+            "vid_1"
+        ],
+        "ChildNodeUUID": [
+            "beda2c13-9893-456e-a795-7426bfd47af2",
+            "a72c1abb-8174-4245-9bf6-e515bbf39510",
+            "af713a2d-92f4-48ed-83a9-f4224b146bb9"
+        ]
+    },
+    "beda2c13-9893-456e-a795-7426bfd47af2": {
+        "UUID": "beda2c13-9893-456e-a795-7426bfd47af2",
+        "Step": "5. Let the old oil drain completely.",
+        "TreeLevel": 5,
+        "IDList": [
+            "vid_1",
+            "vid_4"
+        ],
+        "ChildNodeUUID": [
+            "587d10d2-8952-4a1d-bc67-d66676759a7b",
+            "cae1c225-d9a3-4bf2-b558-b3b4b91dc7e5",
+            "1a79e2b6-b81e-44bd-9abe-2915073d63ab"
+        ]
+    },
+    "4362911d-83f6-45d4-86c1-13c0a9158a7a": {
+        "UUID": "4362911d-83f6-45d4-86c1-13c0a9158a7a",
+        "Step": "7. Pour the fresh synthetic oil into the engine.",
+        "TreeLevel": 5,
+        "IDList": [
+            "vid_1",
+            "vid_2",
+            "vid_3"
+        ],
+        "ChildNodeUUID": [
+            "8d4719d9-364f-4412-ae5c-5c143d3fe5b0"
+        ]
+    },
+    "8d4719d9-364f-4412-ae5c-5c143d3fe5b0": {
+        "UUID": "8d4719d9-364f-4412-ae5c-5c143d3fe5b0",
+        "Step": "8. Check for any oil leaks.",
+        "TreeLevel": 6,
+        "IDList": [
+            "vid_1",
+            "vid_6"
+        ],
+        "ChildNodeUUID": [
+            "4d312c34-e97d-46f5-8870-b97eac543db1",
+            "8b7ffe4c-62f6-41b6-aec7-21b8d897a85b"
+        ]
+    },
+    "4d312c34-e97d-46f5-8870-b97eac543db1": {
+        "UUID": "4d312c34-e97d-46f5-8870-b97eac543db1",
+        "Step": "9. Confirm if the car is running smoothly.",
+        "TreeLevel": 7,
+        "IDList": [
+            "vid_1"
+        ],
+        "ChildNodeUUID": [
+            "bb7fcd05-7f93-4a02-9d88-e65726c6bf46",
+            "1914c2a5-7121-432e-929e-6ff974a8dcd7",
+            "02b7cfbd-5f70-43b9-b8ed-2f10f6071b88"
+        ]
+    },
+    "306bb3d6-ac5f-4fce-9a80-d27d88a56dfb": {
+        "UUID": "306bb3d6-ac5f-4fce-9a80-d27d88a56dfb",
+        "Step": "1. Remove the splash guard to access the oil drain plug.",
+        "TreeLevel": 3,
+        "IDList": [
+            "vid_2"
+        ],
+        "ChildNodeUUID": []
+    },
+    "4c1686d1-29e3-4f7c-b570-6b9939632b3d": {
+        "UUID": "4c1686d1-29e3-4f7c-b570-6b9939632b3d",
+        "Step": "2. Drain the old oil from the Mini Cooper S.",
+        "TreeLevel": 3,
+        "IDList": [
+            "vid_2",
+            "vid_5",
+            "vid_9"
+        ],
+        "ChildNodeUUID": []
+    },
+    "2efdb15e-ee84-4a9e-af74-2043bec80294": {
+        "UUID": "2efdb15e-ee84-4a9e-af74-2043bec80294",
+        "Step": "4. Thoroughly clean the old oil filter housing.",
+        "TreeLevel": 4,
+        "IDList": [
+            "vid_2"
+        ],
+        "ChildNodeUUID": []
+    },
+    "587d10d2-8952-4a1d-bc67-d66676759a7b": {
+        "UUID": "587d10d2-8952-4a1d-bc67-d66676759a7b",
+        "Step": "6. Understand why using the correct type of oil matters.",
+        "TreeLevel": 6,
+        "IDList": [
+            "vid_2"
+        ],
+        "ChildNodeUUID": []
+    },
+    "bb7fcd05-7f93-4a02-9d88-e65726c6bf46": {
+        "UUID": "bb7fcd05-7f93-4a02-9d88-e65726c6bf46",
+        "Step": "7. Reset the service indicator on the dashboard.",
+        "TreeLevel": 8,
+        "IDList": [
+            "vid_2"
+        ],
+        "ChildNodeUUID": [
+            "266db454-ea72-496e-8780-66d3348b325a",
+            "8401febe-cf03-481a-b873-6c6d455fb1af"
+        ]
+    },
+    "2d68eb52-03ed-4285-9aeb-be44d1629ce4": {
+        "UUID": "2d68eb52-03ed-4285-9aeb-be44d1629ce4",
+        "Step": "1. Lift the Mini Cooper S with a car jack.",
+        "TreeLevel": 2,
+        "IDList": [
+            "vid_3"
+        ],
+        "ChildNodeUUID": [
+            "3b281744-25f9-4699-b819-0e0084f5d286"
+        ]
+    },
+    "3b281744-25f9-4699-b819-0e0084f5d286": {
+        "UUID": "3b281744-25f9-4699-b819-0e0084f5d286",
+        "Step": "2. Secure the lifted car with jack stands for safety.",
+        "TreeLevel": 3,
+        "IDList": [
+            "vid_3"
+        ],
+        "ChildNodeUUID": []
+    },
+    "e8b5ed68-2345-4e56-8d88-6489bd218b35": {
+        "UUID": "e8b5ed68-2345-4e56-8d88-6489bd218b35",
+        "Step": "3. Drain the old engine oil.",
+        "TreeLevel": 3,
+        "IDList": [
+            "vid_3",
+            "vid_10"
+        ],
+        "ChildNodeUUID": []
+    },
+    "a72c1abb-8174-4245-9bf6-e515bbf39510": {
+        "UUID": "a72c1abb-8174-4245-9bf6-e515bbf39510",
+        "Step": "4. Inspect the drain plug for wear or damage.",
+        "TreeLevel": 5,
+        "IDList": [
+            "vid_3"
+        ],
+        "ChildNodeUUID": []
+    },
+    "af713a2d-92f4-48ed-83a9-f4224b146bb9": {
+        "UUID": "af713a2d-92f4-48ed-83a9-f4224b146bb9",
+        "Step": "5. Install a new washer on the oil drain plug.",
+        "TreeLevel": 5,
+        "IDList": [
+            "vid_3"
+        ],
+        "ChildNodeUUID": [
+            "11883736-68ca-44bd-a137-1f92941a76c9"
+        ]
+    },
+    "cae1c225-d9a3-4bf2-b558-b3b4b91dc7e5": {
+        "UUID": "cae1c225-d9a3-4bf2-b558-b3b4b91dc7e5",
+        "Step": "6. Replace the old oil filter with a new one.",
+        "TreeLevel": 6,
+        "IDList": [
+            "vid_3",
+            "vid_4",
+            "vid_10"
+        ],
+        "ChildNodeUUID": []
+    },
+    "e4472527-6fb5-45de-a9a1-d97d6f6dc038": {
+        "UUID": "e4472527-6fb5-45de-a9a1-d97d6f6dc038",
+        "Step": "3. Safely lift the 2015 Mini Cooper S.",
+        "TreeLevel": 2,
+        "IDList": [
+            "vid_4"
+        ],
+        "ChildNodeUUID": []
+    },
+    "11883736-68ca-44bd-a137-1f92941a76c9": {
+        "UUID": "11883736-68ca-44bd-a137-1f92941a76c9",
+        "Step": "7. Avoid over-tightening the drain plug and oil filter.",
+        "TreeLevel": 6,
+        "IDList": [
+            "vid_4"
+        ],
+        "ChildNodeUUID": []
+    },
+    "266db454-ea72-496e-8780-66d3348b325a": {
+        "UUID": "266db454-ea72-496e-8780-66d3348b325a",
+        "Step": "8. Dispose of the old oil responsibly.",
+        "TreeLevel": 9,
+        "IDList": [
+            "vid_4"
+        ],
+        "ChildNodeUUID": [
+            "fad805a5-c99f-41d6-8d3a-dd3171b87e0c"
+        ]
+    },
+    "9eb978ab-9734-4ed3-ba3c-f978d48e8f19": {
+        "UUID": "9eb978ab-9734-4ed3-ba3c-f978d48e8f19",
+        "Step": "2. Gather the necessary tools and supplies for an oil change.",
+        "TreeLevel": 2,
+        "IDList": [
+            "vid_5",
+            "vid_8",
+            "vid_9"
+        ],
+        "ChildNodeUUID": []
+    },
+    "c0c544e6-fd9f-49bb-a77a-2c48a1b3d8f0": {
+        "UUID": "c0c544e6-fd9f-49bb-a77a-2c48a1b3d8f0",
+        "Step": "5. Refill the engine with fresh synthetic oil.",
+        "TreeLevel": 4,
+        "IDList": [
+            "vid_5"
+        ],
+        "ChildNodeUUID": []
+    },
+    "1914c2a5-7121-432e-929e-6ff974a8dcd7": {
+        "UUID": "1914c2a5-7121-432e-929e-6ff974a8dcd7",
+        "Step": "6. Perform a quick test drive to ensure the car is working appropriately after the oil change.",
+        "TreeLevel": 8,
+        "IDList": [
+            "vid_5"
+        ],
+        "ChildNodeUUID": [
+            "6785964c-a9eb-4c93-8a04-555f5d444129"
+        ]
+    },
+    "ce207f6d-7c46-4da8-8f87-fc4a4fb21a1b": {
+        "UUID": "ce207f6d-7c46-4da8-8f87-fc4a4fb21a1b",
+        "Step": "1. Jack up the car and secure it properly.",
+        "TreeLevel": 2,
+        "IDList": [
+            "vid_6"
+        ],
+        "ChildNodeUUID": []
+    },
+    "cbc910da-02cb-4835-9f1a-847f3af4d86b": {
+        "UUID": "cbc910da-02cb-4835-9f1a-847f3af4d86b",
+        "Step": "4. Replace the filter gasket.",
+        "TreeLevel": 3,
+        "IDList": [
+            "vid_6"
+        ],
+        "ChildNodeUUID": []
+    },
+    "a3ffccc4-ac49-4f5d-b51f-dd4bc5a706d3": {
+        "UUID": "a3ffccc4-ac49-4f5d-b51f-dd4bc5a706d3",
+        "Step": "5. Fit the new oil filter.",
+        "TreeLevel": 4,
+        "IDList": [
+            "vid_6"
+        ],
+        "ChildNodeUUID": []
+    },
+    "02b7cfbd-5f70-43b9-b8ed-2f10f6071b88": {
+        "UUID": "02b7cfbd-5f70-43b9-b8ed-2f10f6071b88",
+        "Step": "9. Follow the pro-tip segment about maintaining car's performance.",
+        "TreeLevel": 8,
+        "IDList": [
+            "vid_6"
+        ],
+        "ChildNodeUUID": []
+    },
+    "a8743929-837f-40bd-b431-06f3df3f7f5c": {
+        "UUID": "a8743929-837f-40bd-b431-06f3df3f7f5c",
+        "Step": "3. Access and change the oil filter following the specific model guidelines.",
+        "TreeLevel": 4,
+        "IDList": [
+            "vid_7"
+        ],
+        "ChildNodeUUID": []
+    },
+    "59e5b646-59a3-46e6-921c-02ea28ffbc54": {
+        "UUID": "59e5b646-59a3-46e6-921c-02ea28ffbc54",
+        "Step": "4. Understand the importance of using a funnel during the refilling process to avoid spills.",
+        "TreeLevel": 5,
+        "IDList": [
+            "vid_7"
+        ],
+        "ChildNodeUUID": []
+    },
+    "8401febe-cf03-481a-b873-6c6d455fb1af": {
+        "UUID": "8401febe-cf03-481a-b873-6c6d455fb1af",
+        "Step": "6. Learn how to reset the oil service warning light according to the vehicle manual.",
+        "TreeLevel": 9,
+        "IDList": [
+            "vid_7"
+        ],
+        "ChildNodeUUID": []
+    },
+    "fad805a5-c99f-41d6-8d3a-dd3171b87e0c": {
+        "UUID": "fad805a5-c99f-41d6-8d3a-dd3171b87e0c",
+        "Step": "3. Safely dispose of the old oil.",
+        "TreeLevel": 10,
+        "IDList": [
+            "vid_8"
+        ],
+        "ChildNodeUUID": []
+    },
+    "1a79e2b6-b81e-44bd-9abe-2915073d63ab": {
+        "UUID": "1a79e2b6-b81e-44bd-9abe-2915073d63ab",
+        "Step": "5. Fill the engine with the appropriate type of synthetic oil.",
+        "TreeLevel": 6,
+        "IDList": [
+            "vid_8"
+        ],
+        "ChildNodeUUID": []
+    },
+    "8b7ffe4c-62f6-41b6-aec7-21b8d897a85b": {
+        "UUID": "8b7ffe4c-62f6-41b6-aec7-21b8d897a85b",
+        "Step": "6. Check for and troubleshoot any leaks experienced.",
+        "TreeLevel": 7,
+        "IDList": [
+            "vid_8"
+        ],
+        "ChildNodeUUID": []
+    },
+    "b01d44bd-5dfa-47ac-8fe4-4d4887363e5e": {
+        "UUID": "b01d44bd-5dfa-47ac-8fe4-4d4887363e5e",
+        "Step": "4. Implement a method for clean-up of any potential oil spills.",
+        "TreeLevel": 1,
+        "IDList": [
+            "vid_9"
+        ],
+        "ChildNodeUUID": [
+            "88a2e389-cb13-4396-8947-6109b55547f3"
+        ]
+    },
+    "88a2e389-cb13-4396-8947-6109b55547f3": {
+        "UUID": "88a2e389-cb13-4396-8947-6109b55547f3",
+        "Step": "6. Clean up the workspace.",
+        "TreeLevel": 2,
+        "IDList": [
+            "vid_9"
+        ],
+        "ChildNodeUUID": []
+    },
+    "a51efefa-eb6c-49ab-9a64-ae33c0fab29b": {
+        "UUID": "a51efefa-eb6c-49ab-9a64-ae33c0fab29b",
+        "Step": "1. Jack up the Mini Cooper S, 2015 model.",
+        "TreeLevel": 2,
+        "IDList": [
+            "vid_10"
+        ],
+        "ChildNodeUUID": []
+    },
+    "808c6b53-a5f8-4267-a535-ad66b3654042": {
+        "UUID": "808c6b53-a5f8-4267-a535-ad66b3654042",
+        "Step": "5. Fill the engine with the new oil.",
+        "TreeLevel": 5,
+        "IDList": [
+            "vid_10"
+        ],
+        "ChildNodeUUID": []
+    },
+    "6785964c-a9eb-4c93-8a04-555f5d444129": {
+        "UUID": "6785964c-a9eb-4c93-8a04-555f5d444129",
+        "Step": "7. Reset the dashboard light.",
+        "TreeLevel": 9,
+        "IDList": [
+            "vid_10"
+        ],
+        "ChildNodeUUID": []
+    }
+}
