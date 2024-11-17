@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { FaSearch, FaMicrophone } from 'react-icons/fa';
 
 const SearchBar = ({ onSearch }) => {
 	const [query, setQuery] = useState('');
@@ -26,6 +27,7 @@ const SearchBar = ({ onSearch }) => {
 
 	return (
 		<div className='flex w-full h-12'>
+			{/* Input Field */}
 			<input
 				type='text'
 				placeholder='Search FAQs by question or answer...'
@@ -33,13 +35,23 @@ const SearchBar = ({ onSearch }) => {
 				value={query}
 				onChange={(e) => setQuery(e.target.value)}
 			/>
-			<button
-				className='bg-black text-white px-6 rounded-r-md hover:bg-gray-700 text-sm'
-				onClick={() => onSearch(query)}
-				disabled={!query.trim()}
-			>
-				Search
-			</button>
+
+			{/* Button Container */}
+			<div className='bg-black text-white px-4 flex items-center rounded-r-md'>
+				{/* Microphone Icon */}
+				<button className='mr-4 focus:outline-none'>
+					<FaMicrophone size={16} />
+				</button>
+
+				{/* Search Icon */}
+				<button
+					className='focus:outline-none'
+					onClick={() => onSearch(query)}
+					disabled={!query.trim()}
+				>
+					<FaSearch size={16} />
+				</button>
+			</div>
 		</div>
 	);
 };
