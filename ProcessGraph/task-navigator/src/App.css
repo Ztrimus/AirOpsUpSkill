@@ -1,43 +1,120 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f3f4f6; /* Light gray */
-}
-
-header {
+/* Main container for the animated background */
+.animated-bg-container {
+  position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: #2563eb; /* Blue */
-  color: white;
-  padding: 16px;
-}
-
-main {
-  display: flex;
-  height: calc(100vh - 64px); /* Subtract header height */
-  padding: 16px;
-  gap: 16px;
-}
-
-.card {
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(120deg, #ff7eb3, #ff758c, #ffdf7e, #b0e57c);
+  background-size: 300% 300%;
+  animation: gradientAnimation 8s ease infinite; /* Smooth gradient animation */
   overflow: hidden;
+}
+
+/* Gradient background animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Glassmorphic card styling */
+.card {
   display: flex;
   flex-direction: column;
+  height: 60%; /* Adjust height as needed */
+  width: 90%; /* Adjust width as needed */
+  max-width: 500px; /* Limit the maximum width */
+  background: rgba(255, 255, 255, 0.3); /* Transparent for glass effect */
+  backdrop-filter: blur(15px) saturate(180%); /* Blur and saturation for vibrance */
+  -webkit-backdrop-filter: blur(15px) saturate(180%); /* Safari compatibility */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+  border-radius: 16px; /* Softer rounded corners */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Deep shadow for depth */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
 }
 
+.card:hover {
+  transform: translateY(-8px); /* Lift effect on hover */
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Card header */
 .card-header {
-  background-color: #e5e7eb; /* Light gray */
-  border-bottom: 1px solid #d1d5db; /* Gray border */
+  background-color: rgba(255, 255, 255, 0.4); /* Slightly transparent white */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
   padding: 16px;
   font-weight: bold;
+  font-size: 1.5rem; /* Larger header text */
+  flex-shrink: 0;
+  color: #1f2937; /* Contrast for text */
+  text-align: center;
 }
 
+/* Card body (scrollable area) */
 .card-body {
-  padding: 16px;
-  overflow-y: auto;
   flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #374151;
+}
+
+/* Custom scrollbar for card body */
+.card-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.card-body::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.5);
+  border-radius: 8px;
+}
+
+.card-body::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.7);
+}
+
+/* Footer for extra info or buttons */
+.card-footer {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 12px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+/* Floating elements inside the animated background */
+.animated-bg-container::before,
+.animated-bg-container::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0));
+  mix-blend-mode: overlay;
+  animation: float 10s infinite;
+  pointer-events: none;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
