@@ -1,27 +1,98 @@
-/*
- * -----------------------------------------------------------------------
- * File: frontend/FAQCard.js
- * Creation Time: Nov 16th 2024, 8:06 pm
- * Author: Saurabh Zinjad
- * Developer Email: saurabhzinjad@gmail.com
- * Copyright (c) 2023-2024 Saurabh Zinjad. All rights reserved | https://github.com/Ztrimus
- * -----------------------------------------------------------------------
- */
+import React, { useState } from 'react';
+import { FaThumbsUp, FaThumbsDown } from 'react-icons/fa';
 
-import React from 'react';
+const FAQCard = ({
+	faq_name,
+	machine_type,
+	common_3_repairs,
+	common_3_culprits,
+	solution_to_single_frequent_culprit,
+	rating,
+	onFeedback,
+}) => {
+	const [showFullSolution, setShowFullSolution] = useState(false);
 
-const FAQCard = ({ question, answer, tags }) => {
+	const toggleSolution = () => {
+		setShowFullSolution((prev) => !prev);
+	};
+
 	return (
-		<div className='card bg-base-100 shadow-md my-4'>
-			<div className='card-body'>
-				<h2 className='card-title text-lg font-semibold'>{question}</h2>
-				<p className='mt-2'>{answer}</p>
-				<div className='mt-4 flex flex-wrap gap-2'>
-					{tags.map((tag, index) => (
-						<span key={index} className='badge badge-outline'>
-							{tag}
-						</span>
-					))}
+		<div
+			className='glass-card p-6 rounded-lg shadow-md hover:shadow-2xl hover:scale-105 transition-transform duration-300 border border-gray-200'
+			style={{
+				background: 'rgba(255, 255, 255, 0.15)',
+				boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+				backdropFilter: 'blur(10px)',
+			}}
+		>
+			<div>
+				{/* FAQ Title */}
+				<h2 className='text-xl font-bold mb-2'>{faq_name}</h2>
+				<p className='text-sm text-gray-500 mb-4 flex gap-2'>
+					<span>⚙️</span> {machine_type}
+				</p>
+
+				{/* Common Repairs */}
+				<div className='mb-4'>
+					<h3 className='text-blue-500 font-medium flex gap-2'>
+						<span>🔧</span> <b>Common Repairs</b>
+					</h3>
+					<ul className='list-disc list-inside text-gray-700 mt-1 text-sm'>
+						{common_3_repairs.split(', ').map((repair, index) => (
+							<li key={index}>{repair}</li>
+						))}
+					</ul>
+				</div>
+
+				{/* Common Culprits */}
+				<div className='mb-4'>
+					<h3 className='text-orange-500 font-medium flex gap-2'>
+						<span>⚠️</span> <b>Common Culprits</b>
+					</h3>
+					<ul className='list-disc list-inside text-gray-700 mt-1 text-sm'>
+						{common_3_culprits.split(', ').map((culprit, index) => (
+							<li key={index}>{culprit}</li>
+						))}
+					</ul>
+				</div>
+
+				{/* Solution */}
+				<div>
+					<h3 className='text-green-500 font-medium flex gap-2'>
+						<span>✅</span> <b>Solution</b>
+					</h3>
+					<p className='text-gray-700 mt-1 text-sm'>
+						{showFullSolution
+							? solution_to_single_frequent_culprit
+							: `${solution_to_single_frequent_culprit.slice(0, 200)}...`}
+					</p>
+					{solution_to_single_frequent_culprit.length > 200 && (
+						<button
+							className='text-blue-500 text-sm mt-2 underline'
+							onClick={toggleSolution}
+						>
+							{showFullSolution ? 'Show less' : 'Show more'}
+						</button>
+					)}
+				</div>
+			</div>
+
+			{/* Feedback Buttons - Sticky Footer */}
+			<div className='mt-6 flex justify-between border-t pt-4 border-gray-500'>
+				<span className='text-sm text-gray-600'>Rating: {rating}</span>
+				<div className='flex gap-2'>
+					<button
+						className='flex justify-center text-emerald-500 border border-emerald-500 px-3 py-1 text-sm rounded-md hover:bg-emerald-500 hover:text-white transition-all'
+						onClick={() => onFeedback('helpful')}
+					>
+						<FaThumbsUp className='mr-1' /> {/* Thumbs Up Icon */}
+					</button>
+					<button
+						className='flex justify-center text-rose-500 border border-rose-500 px-3 py-1 text-sm rounded-md hover:bg-rose-500 hover:text-white transition-all'
+						onClick={() => onFeedback('improve')}
+					>
+						<FaThumbsDown className='mr-1' /> {/* Thumbs Down Icon */}
+					</button>
 				</div>
 			</div>
 		</div>

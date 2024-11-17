@@ -12,6 +12,11 @@ uvicorn = "^0.32.0"
 python-dotenv = "^1.0.1"
 psycopg2 = "^2.9.10"
 openai = "^1.54.4"
+sentence-transformers = "^3.3.0"
+psycopg2-binary = "^2.9.10"
+pgvector = "^0.3.6"
+hdbscan = "^0.8.39"
+langchain-core = "^0.3.19"
 
 
 [build-system]

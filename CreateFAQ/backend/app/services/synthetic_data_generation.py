@@ -12,7 +12,8 @@ import os
 import random
 import logging
 from datetime import datetime, timedelta
-from db import create_table, create_repair_job, RepairJob
+import time
+from db import create_table, create_repair_job, RepairJob, with_connection
 from openai import OpenAI
 import json
 
@@ -321,8 +322,8 @@ Make sure the output is valid JSON and adheres to the specified format.
 
 
 # Generate full repair job dataset
-def generate_full_repair_job_data():
-    for i in range(26, 100):
+def generate_full_repair_job_data(prev_row_len=0):
+    for i in range(prev_row_len + 1, 101):
         job_type = random.choice(repair_jobs)
         ticket_id = f"HON-2024-11-{i:03}"
         job_instance = generate_repair_job_instance(ticket_id, job_type)
@@ -370,6 +371,18 @@ def save_repair_jobs_to_db(job):
         )
 
 
+@with_connection
+def count_repair_job_rows(conn):
+    """
+    Count the number of rows in the repairjob table.
+    """
+    sql = "SELECT COUNT(*) FROM repairjob"
+    with conn.cursor() as cur:
+        cur.execute(sql)
+        count = cur.fetchone()[0]  # Fetch the first column of the first row
+        return count
+
+
 # Main script
 if __name__ == "__main__":
     try:
@@ -379,7 +392,8 @@ if __name__ == "__main__":
 
         # Step 2: Generate synthetic repair job data
         logging.info("Generating synthetic repair jobs.")
-        repair_jobs_data = generate_full_repair_job_data()
+        prev_row_len = count_repair_job_rows()
+        repair_jobs_data = generate_full_repair_job_data(prev_row_len)
 
         logging.info("All repair jobs have been processed.")
 

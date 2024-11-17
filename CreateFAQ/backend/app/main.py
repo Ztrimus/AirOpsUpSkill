@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.routers import faq
+from app.routers import faq, jobs
 import uvicorn
 
 app = FastAPI()
@@ -16,6 +16,7 @@ app.add_middleware(
 
 # Include the FAQ router
 app.include_router(faq.router)
+app.include_router(jobs.router)
 
 
 @app.get("/")
