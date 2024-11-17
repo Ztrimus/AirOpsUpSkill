@@ -1,0 +1,10 @@
+{
+  "file_name": "process-graph.py",
+  "prompts": [
+    {
+      "ai_behavior": "Read data from a CSV file and convert it to a JSON object with video_id as keys and transcripts as values."
+    }
+  ]
+}
+
+
