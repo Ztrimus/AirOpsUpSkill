@@ -1,3 +1,22 @@
+-   frontend
+    -   npm install
+    -   npm start
+-   backend
+    -   FastAPI
+        -   pip install poetry
+        -   poetry shell
+        -   poetry install
+        -   python -m app.main
+    -   database
+        -   brew install postgresql
+        -   brew services start postgresql
+        -   psql -U postgres
+        -   CREATE DATABASE air_ops_up_skill_db;
+        -   CREATE USER saurabh_zinjad WITH PASSWORD 'Honeywell@123';
+        -   GRANT ALL PRIVILEGES ON DATABASE air_ops_up_skill_db TO saurabh_zinjad;
+        -   GRANT USAGE ON SCHEMA public TO saurabh_zinjad;
+        -   GRANT CREATE ON SCHEMA public TO saurabh_zinjad;
+
 # How it Works:
 
 ## 1. Purpose:
