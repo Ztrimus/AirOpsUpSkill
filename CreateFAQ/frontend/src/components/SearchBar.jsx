@@ -5,25 +5,25 @@ const SearchBar = ({ onSearch }) => {
 	const [query, setQuery] = useState('');
 	const [debouncedQuery, setDebouncedQuery] = useState('');
 
-	// Debounce effect to minimize API calls
-	useEffect(() => {
-		const handler = setTimeout(() => {
-			setDebouncedQuery(query);
-		}, 300);
+	// // Debounce effect to minimize API calls
+	// useEffect(() => {
+	// 	const handler = setTimeout(() => {
+	// 		setDebouncedQuery(query);
+	// 	}, 300);
 
-		return () => {
-			clearTimeout(handler);
-		};
-	}, [query]);
+	// 	return () => {
+	// 		clearTimeout(handler);
+	// 	};
+	// }, [query]);
 
-	// Trigger the search when the debounced query changes
-	useEffect(() => {
-		if (debouncedQuery.trim() !== '') {
-			onSearch(debouncedQuery);
-		} else {
-			onSearch('');
-		}
-	}, [debouncedQuery, onSearch]);
+	// // Trigger the search when the debounced query changes
+	// useEffect(() => {
+	// 	if (debouncedQuery.trim() !== '') {
+	// 		onSearch(debouncedQuery);
+	// 	} else {
+	// 		onSearch('');
+	// 	}
+	// }, [debouncedQuery, onSearch]);
 
 	return (
 		<div className='flex w-full h-12'>

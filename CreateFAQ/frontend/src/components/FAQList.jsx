@@ -78,10 +78,11 @@ const FAQList = () => {
 			<ToastContainer />
 			<div className='space-y-4'>
 				{/* Title and Button */}
-				<div className='flex flex-col md:flex-row md:justify-between md:items-center'>
-					<h1 className='text-4xl font-bold tracking-tight'>
-						Frequently Asked Questions
-					</h1>
+				<div className='flex flex-col md:flex-row md:items-center'>
+					<h1 className='text-4xl font-bold tracking-tight'>Auto FAQ Generator</h1>
+					<p className='ml-5 align-bottom mt-auto text-gray'>
+						<i>Empowering Repairs, Simplifying Solutions</i>
+					</p>
 					{/* <button
 						className='bg-black text-white px-4 py-2 rounded-md hover:bg-gray-700'
 						onClick={createFAQ}
