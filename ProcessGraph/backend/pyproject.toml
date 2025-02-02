@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "backend"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.2.3"
+networkx = "^3.4.2"
+matplotlib = "^3.9.2"
+openai = "^1.54.4"
+pyyaml = "^6.0.2"
+python-dotenv = "^1.0.1"
+anytree = "^2.12.1"
+graphviz = "^0.20.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
